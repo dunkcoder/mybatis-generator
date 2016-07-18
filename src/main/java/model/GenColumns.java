@@ -1,10 +1,7 @@
 package model;
 
 /**
- * Author: liumangafei
- * Date: 2014/10/25
- * Project Name: generator
- * Description: 该类为表中的属性信息及对应类的相关信息
+ * 该类为表中的属性信息及对应类的相关信息
  */
 public class GenColumns {
 

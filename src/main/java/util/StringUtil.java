@@ -1,11 +1,5 @@
 package util;
 
-/**
- * Author: liumangafei
- * Date: 2014/10/25
- * Project Name: generator
- * Description:
- */
 public class StringUtil {
 
     /**

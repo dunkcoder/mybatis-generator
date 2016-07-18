@@ -17,12 +17,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Author: liumangafei
- * Date: 2014/10/25
- * Project Name: generator
- * Description:
- */
 public class ModelGenerator implements Generator {
 
 //    private static Logger logger = LoggerFactory.getLogger(ModelGenerator.class);
@@ -74,11 +68,10 @@ public class ModelGenerator implements Generator {
         return genTables.getGenColumnsList();
     }
 
-    @Override
     public void generateFile(Writer out) throws IOException, TemplateException {
         Template temp = FMTemplateFactory.getTemplate("model.ftl");
 
-        Map root = new HashMap();
+        Map<String, Object> root = new HashMap<String, Object>();
         root.put("package", getPackage());
         root.put("importList", getImportList());
         root.put("className", getClassName());
@@ -90,14 +83,12 @@ public class ModelGenerator implements Generator {
         temp.process(root, out);
     }
 
-    @Override
     public void generateFile(String filePath) throws IOException, TemplateException {
         Writer out = new OutputStreamWriter(FileUtils.openOutputStream(new File(filePath)));
         generateFile(out);
         out.flush();
     }
 
-    @Override
     public void generateFile() throws IOException, TemplateException {
         generateFile(genTables.getModelPath());
     }

@@ -1,12 +1,5 @@
 package util;
 
-import java.util.Calendar;
-import java.util.Date;
-import java.util.GregorianCalendar;
-
-/**
- * Created by lipengfei on 2015/1/25.
- */
 public class SystemInfo {
 
     /**

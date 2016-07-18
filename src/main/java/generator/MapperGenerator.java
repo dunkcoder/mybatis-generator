@@ -15,12 +15,6 @@ import java.io.Writer;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Author: liumangafei
- * Date: 2014/10/25
- * Project Name: generator
- * Description:
- */
 public class MapperGenerator implements Generator {
 
 //    private static Logger logger = LoggerFactory.getLogger(MapperGenerator.class);
@@ -53,11 +47,10 @@ public class MapperGenerator implements Generator {
         return property.getPropertyType();
     }
 
-    @Override
     public void generateFile(Writer out) throws IOException, TemplateException {
         Template temp = FMTemplateFactory.getTemplate("mapper.ftl");
 
-        Map root = new HashMap();
+        Map<String, String> root = new HashMap<String, String>();
         root.put("package", genTables.getMapperPackage());
         root.put("modelPath", getModelPath());
         root.put("className", genTables.getClassName());
@@ -71,14 +64,12 @@ public class MapperGenerator implements Generator {
         out.flush();
     }
 
-    @Override
     public void generateFile(String filePath) throws IOException, TemplateException {
         Writer out = new OutputStreamWriter(FileUtils.openOutputStream(new File(filePath)));
         generateFile(out);
         out.flush();
     }
 
-    @Override
     public void generateFile() throws IOException, TemplateException {
         generateFile(genTables.getMapperPath());
     }

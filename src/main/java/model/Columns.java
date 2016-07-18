@@ -1,10 +1,7 @@
 package model;
 
 /**
- * Author: liumangafei
- * Date: 2014/10/25
- * Project Name: generator
- * Description: 对应information_schema中的COLUMNS
+ * 对应information_schema中的COLUMNS
  */
 public class Columns {
 

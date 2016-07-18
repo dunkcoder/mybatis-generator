@@ -3,10 +3,7 @@ package model;
 import java.util.Date;
 
 /**
- * Author: liumangafei
- * Date: 2014/10/25
- * Project Name: generator
- * Description: 对应information_schema中的TABLES
+ * 对应information_schema中的TABLES
  */
 public class Tables {
 

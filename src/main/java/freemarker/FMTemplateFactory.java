@@ -6,12 +6,6 @@ import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 
-/**
- * Author: liumangafei
- * Date: 2014/10/25
- * Project Name: generator
- * Description:
- */
 public class FMTemplateFactory {
 
     private static Logger logger = LoggerFactory.getLogger(FMTemplateFactory.class);

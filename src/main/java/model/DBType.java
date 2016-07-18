@@ -1,10 +1,7 @@
 package model;
 
 /**
- * Author: liumangafei
- * Date: 2014/10/25
- * Project Name: generator
- * Description: 数据库字段类型与java类型之间的对应关系类
+ * 数据库字段类型与java类型之间的对应关系类
  */
 public enum DBType {
 

@@ -3,10 +3,7 @@ package model;
 import java.util.List;
 
 /**
- * Author: liumangafei
- * Date: 2014/10/25
- * Project Name: generator
- * Description: 该类包含表的相关信息、对应的类的相关信息、表中属性的相关信息
+ * 该类包含表的相关信息、对应的类的相关信息、表中属性的相关信息
  */
 public class GenTables {
 
